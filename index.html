@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desde el Silencio | Apoyo Psicológico Seguro y Cercano</title>
+    <meta name="description"
+        content="Un espacio seguro para mujeres que sienten sobrecarga emocional. No tienes que estar lista para empezar terapia. Hablemos sin compromiso.">
+
+    <!-- Google Fonts: Cormorant Garamond (Heading) and Nunito Sans (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Nunito+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- ============================================
+         1. HEADER / NAVBAR
+         ============================================ -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <!-- Brand -->
+            <a href="#" class="header__brand">
+                Psic. <span>Elia López</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="header__nav">
+                <ul class="header__nav-links">
+                    <li><a href="#como-funciona" class="header__nav-link">¿Cómo funciona?</a></li>
+                    <li><a href="#primera-sesion" class="header__nav-link">La primera sesión</a></li>
+                    <li><a href="#conmigo" class="header__nav-link">Sobre mí</a></li>
+                    <li><a href="#areas" class="header__nav-link">Áreas de apoyo</a></li>
+                </ul>
+                <a href="https://wa.me/573138208022?text=Hola%2C%20vi%20tu%20p%C3%A1gina%20y%20me%20gustar%C3%ADa%20saber%20c%C3%B3mo%20funciona%20el%20proceso%20%F0%9F%99%8F"
+                    target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp header__cta">
+                    Hablemos por WhatsApp
+                </a>
+            </nav>
+
+            <!-- Mobile Hamburger -->
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu__overlay" id="mobile-overlay"></div>
+
+    <nav class="mobile-menu" id="mobile-menu">
+        <ul style="display: flex; flex-direction: column; gap: var(--space-md);">
+            <li><a href="#como-funciona" class="mobile-menu__link">¿Cómo funciona?</a></li>
+            <li><a href="#primera-sesion" class="mobile-menu__link">La primera sesión</a></li>
+            <li><a href="#conmigo" class="mobile-menu__link">Sobre mí</a></li>
+            <li><a href="#areas" class="mobile-menu__link">Áreas de apoyo</a></li>
+        </ul>
+        <a href="https://wa.me/573138208022?text=Hola%2C%20vi%20tu%20p%C3%A1gina%20y%20me%20gustar%C3%ADa%20saber%20c%C3%B3mo%20funciona%20el%20proceso%20%F0%9F%99%8F"
+            target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp mobile-menu__cta">
+            Hablemos por WhatsApp
+        </a>
+    </nav>
+
+    <!-- ============================================
+         2. HERO SECTION
+         ============================================ -->
+    <section class="hero fade-in-section">
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    No tienes que estar <em>lista</em> para empezar terapia.
+                </h1>
+                <p class="hero__subtitle">
+                    Para ti, que estás acostumbrada a resolver todo sola y cuidar de los demás. Está bien sentir
+                    agotamiento, y está bien pedir una pausa. Un espacio seguro, cálido y sin juicios te espera.
+                </p>
+                <div class="hero__actions">
+                    <a href="https://wa.me/573138208022?text=Hola%2C%20vi%20tu%20p%C3%A1gina%20y%20me%20gustar%C3%ADa%20saber%20c%C3%B3mo%20funciona%20el%20proceso%20%F0%9F%99%8F"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.298-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+                        </svg>
+                        Escríbeme por WhatsApp
+                    </a>
+                    <span class="hero__reassurance">Podemos hablar primero, sin compromiso.</span>
+                </div>
+            </div>
+            <div class="hero__image">
+                <div class="img-placeholder img-placeholder--hero">
+                    <!-- Placeholder: Replace with actual decorative illustration or warm image -->
+                    Reemplazar por Imagen / Ilustración
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         3. RESISTANCE / EMPATHY SECTION
+         ============================================ -->
+    <section class="resistance fade-in-section">
+        <div class="container">
+            <div class="resistance__inner">
+                <span class="section-label">Comprendo lo que sientes</span>
+                <h2 class="resistance__title">Tal vez has pensado en ir a terapia… pero algo te detiene.</h2>
+                <p class="resistance__text">
+                    Dar el primer paso nunca es fácil. Es natural sentir dudas o resistencia. Tal vez te preguntes si tu
+                    problema "es lo suficientemente grave", o sientas que la terapia es un lujo que no te puedes dar por
+                    tiempo o dinero.
+                </p>
+                <div class="resistance__list">
+                    <div class="resistance__item">
+                        <svg class="resistance__item-icon" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z">
+                            </path>
+                        </svg>
+                        <span>Sientes que siempre debes ser fuerte y que pedir ayuda es una carga para otros.</span>
+                    </div>
+                    <div class="resistance__item">
+                        <svg class="resistance__item-icon" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z">
+                            </path>
+                        </svg>
+                        <span>Crees que es difícil encontrar a alguien de confianza o temes ser juzgada.</span>
+                    </div>
+                    <div class="resistance__item">
+                        <svg class="resistance__item-icon" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z">
+                            </path>
+                        </svg>
+                        <span>No sabes exactamente por dónde empezar o cómo explicar lo que sientes.</span>
+                    </div>
+                </div>
+                <p class="resistance__closing">
+                    No tienes que tenerlo todo claro hoy. Estoy aquí para acompañarte desde donde estés ahora.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         4. HOW IT WORKS SECTION
+         ============================================ -->
+    <section class="how-it-works fade-in-section" id="como-funciona">
+        <div class="container">
+            <header class="how-it-works__header">
+                <span class="section-label">El proceso</span>
+                <h2 class="section-title">Es más sencillo de lo que parece</h2>
+                <p class="section-subtitle">
+                    He diseñado este espacio para que te sientas cómoda desde el primer momento, avanzando a tu propio
+                    ritmo.
+                </p>
+            </header>
+
+            <div class="steps">
+                <!-- Step 1 -->
+                <div class="step fade-in-delay-1">
+                    <div class="step__number">1</div>
+                    <h3 class="step__title">Me escribes por WhatsApp</h3>
+                    <p class="step__text">
+                        Envíame un mensaje. Responderé tus dudas iniciales, sin tecnicismos ni presiones. Acordaremos un
+                        horario conveniente para ambas.
+                    </p>
+                </div>
+                <!-- Step 2 -->
+                <div class="step fade-in-delay-2">
+                    <div class="step__number">2</div>
+                    <h3 class="step__title">Primera sesión</h3>
+                    <p class="step__text">
+                        Nos conocemos. Te explico cómo trabajo y tú me cuentas qué te trae aquí. Empezarás a soltar el
+                        peso que has estado cargando.
+                    </p>
+                </div>
+                <!-- Step 3 -->
+                <div class="step fade-in-delay-3">
+                    <div class="step__number">3</div>
+                    <h3 class="step__title">Claridad y acompañamiento</h3>
+                    <p class="step__text">
+                        A partir de ahí, trazaremos un camino juntas. Te llevarás herramientas prácticas y mayor
+                        tranquilidad desde el primer encuentro.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         5. FIRST SESSION TRUST-BUILDING SECTION
+         ============================================ -->
+    <section class="first-session fade-in-section" id="primera-sesion">
+        <div class="container first-session__inner">
+            <header class="first-session__header">
+                <span class="section-label">Lo que puedes esperar</span>
+                <h2 class="section-title">¿Qué pasa en la primera sesión?</h2>
+                <p class="section-subtitle">
+                    Entiendo que la incertidumbre de la primera cita puede generar ansiedad. Quiero que sepas
+                    exactamente qué esperar.
+                </p>
+            </header>
+
+            <div class="session-points">
+                <!-- Point 1 -->
+                <div class="session-point fade-in-delay-1">
+                    <div class="session-point__icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="session-point__content">
+                        <h3>Yo me presento primero</h3>
+                        <p>Inicio contándote quién soy y cómo he apoyado a otras mujeres. Quiero que sientas que hablas
+                            con alguien humano y cercano.</p>
+                    </div>
+                </div>
+                <!-- Point 2 -->
+                <div class="session-point fade-in-delay-2">
+                    <div class="session-point__icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="session-point__content">
+                        <h3>Puedes hablar libremente</h3>
+                        <p>No hay formas correctas o incorrectas de contar tu historia. Puedes empezar por donde
+                            quieras; yo te escucharé sin juicios ni etiquetas rápidas.</p>
+                    </div>
+                </div>
+                <!-- Point 3 -->
+                <div class="session-point fade-in-delay-3">
+                    <div class="session-point__icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="session-point__content">
+                        <h3>Claridad mediante metáforas</h3>
+                        <p>Explico conceptos complejos utilizando metáforas sencillas para que puedas entender mejor qué
+                            es lo que sientes y por qué lo sientes.</p>
+                    </div>
+                </div>
+                <!-- Point 4 -->
+                <div class="session-point fade-in-delay-4">
+                    <div class="session-point__icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="session-point__content">
+                        <h3>Te llevas claridad</h3>
+                        <p>Al final de nuestra conversación, tendrás un panorama más claro sobre qué pasos seguir en tu
+                            proceso de sanación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="first-session__closing">
+                <p>"La mayoría de las mujeres salen de la primera sesión sintiéndose comprendidas, aliviadas y más
+                    tranquilas."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         6. ABOUT SECTION
+         ============================================ -->
+    <section class="about fade-in-section" id="conmigo">
+        <div class="container about__inner">
+            <div class="about__image fade-in-delay-1">
+                <div class="img-placeholder img-placeholder--about">
+                    <!-- Placeholder: Replace with Psychologist portrait -->
+                    Foto Profesional
+                </div>
+            </div>
+            <div class="about__content fade-in-delay-2">
+                <span class="section-label">Sobre mí</span>
+                <h2 class="section-title">Estructura clínica con calidez humana</h2>
+                <p class="about__text">
+                    Hola. Soy psicóloga clínica y mi vocación es ayudar a mujeres a reencontrarse con su bienestar.
+                    Combino una sólida base científica y académica con un trato humano, cercano y compasivo, adaptándome
+                    siempre a la necesidad particular de cada persona.
+                </p>
+
+                <div class="about__highlights">
+                    <div class="about__highlight">
+                        <svg class="about__highlight-icon" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                            <path
+                                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222">
+                            </path>
+                        </svg>
+                        <p><strong>Especializada:</strong> Maestría en Psicología Clínica, ofreciendo un abordaje
+                            riguroso y efectivo.</p>
+                    </div>
+                    <div class="about__highlight">
+                        <svg class="about__highlight-icon" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                            </path>
+                        </svg>
+                        <p><strong>Experiencia Comunitaria:</strong> Años de trabajo en ONGs brindando soporte y
+                            desarrollando gran sensibilidad social.</p>
+                    </div>
+                    <div class="about__highlight">
+                        <svg class="about__highlight-icon" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                        <p><strong>A tu medida:</strong> Evito modelos distantes y etiquetas agobiantes. La terapia se
+                            adapta a ti, no tú a ella.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         7. AREAS OF SUPPORT SECTION
+         ============================================ -->
+    <section class="services fade-in-section" id="areas">
+        <div class="container">
+            <header class="services__header">
+                <span class="section-label">¿En qué puedo ayudarte?</span>
+                <h2 class="section-title">Encuentra espacio para sanar</h2>
+                <p class="section-subtitle">
+                    Trabajaremos juntas para comprender lo que sientes de manera accesible y profunda, dándole nombre a
+                    aquello que te genera malestar.
+                </p>
+            </header>
+
+            <div class="services__grid">
+                <!-- Card 1 -->
+                <div class="service-card fade-in-delay-1">
+                    <div class="service-card__icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Ansiedad</h3>
+                    <p class="service-card__text">Para cuando la mente va muy rápido, aparecen los miedos anticipados y
+                        sientes que no puedes detener el estrés diario.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="service-card fade-in-delay-2">
+                    <div class="service-card__icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Depresión</h3>
+                    <p class="service-card__text">Si sientes que has perdido la energía, la esperanza o el interés en
+                        cosas que antes disfrutabas, te acompañaré a recuperarlo.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="service-card fade-in-delay-3">
+                    <div class="service-card__icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Duelo</h3>
+                    <p class="service-card__text">Acompañamiento paciente tras la pérdida de un ser querido, una
+                        relación, o cambios profundos en tu vida.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="service-card fade-in-delay-4">
+                    <div class="service-card__icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Sobrecarga emocional</h3>
+                    <p class="service-card__text">Ese agotamiento silencioso de tener que ser la fortaleza para todos,
+                        sin tener a nadie que sea tu soporte.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         8. FINAL CTA SECTION
+         ============================================ -->
+    <section class="final-cta fade-in-section">
+        <div class="container final-cta__inner">
+            <h2 class="final-cta__title">No tienes que decidir todo hoy. Podemos empezar con una conversación.</h2>
+            <p class="final-cta__text">
+                Si sientes que este podría ser el espacio adecuado para ti, hablemos. Es un paso pequeño y un lugar
+                seguro, libre de juicios.
+            </p>
+            <a href="https://wa.me/1234567890?text=Hola%2C%20vi%20tu%20p%C3%A1gina%20y%20me%20gustar%C3%ADa%20saber%20c%C3%B3mo%20funciona%20el%20proceso%20%F0%9F%99%8F"
+                target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.298-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+                </svg>
+                Contáctame hoy mismo
+            </a>
+            <p class="final-cta__reassurance">Te responderé a la brevedad posible.</p>
+        </div>
+    </section>
+
+    <!-- ============================================
+         9. FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__top">
+                <div>
+                    <h2 class="footer__brand">Desde el <span>Silencio</span></h2>
+                    <p class="footer__tagline">Psicología clínica compasiva con enfoque en bienestar emocional y salud
+                        mental de mujeres en toda Latinoamérica.</p>
+                </div>
+                <div>
+                    <h3 class="footer__links-title">Contacto</h3>
+                    <div class="footer__links">
+                        <a href="https://wa.me/573138208022?text=Hola%2C%20vi%20tu%20p%C3%A1gina%20y%20me%20gustar%C3%ADa%20saber%20c%C3%B3mo%20funciona%20el%20proceso%20%F0%9F%99%8F"
+                            target="_blank" rel="noopener noreferrer" class="footer__link">
+                            <svg fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.298-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+                            </svg>
+                            WhatsApp (+57 313 820 8022)
+                        </a>
+                        <a href="#" class="footer__link">
+                            <svg fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                            </svg>
+                            @desde_elsilencio
+                        </a>
+                        <a href="mailto:psicelialopez@ejemplo.com" class="footer__link">
+                            <svg fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                            </svg>
+                            psicelialopez@ejemplo.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2026 Desde el Silencio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/1234567890?text=Hola%2C%20vi%20tu%20p%C3%A1gina%20y%20me%20gustar%C3%ADa%20saber%20c%C3%B3mo%20funciona%20el%20proceso%20%F0%9F%99%8F"
+        target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Hablar por WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.298-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+        </svg>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
