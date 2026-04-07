@@ -637,6 +637,7 @@ p {
     font-style: italic;
     margin-top: var(--space-2xl);
     line-height: 1.6;
+    text-align: center;
 }
 
 /* ============================================
@@ -851,6 +852,7 @@ p {
     color: var(--color-text-light);
     line-height: 1.8;
     margin-bottom: var(--space-lg);
+    text-align: justify;
 }
 
 .about__highlights {
