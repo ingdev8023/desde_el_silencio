@@ -14,17 +14,30 @@ document.addEventListener('DOMContentLoaded', () => {
     const fadeSections = document.querySelectorAll('.fade-in-section');
 
     // --- 1. Sticky Header ---
+    let headerIsScrolled = false;
+    let scrollTicking = false;
+
+    const updateHeaderState = () => {
+        const shouldBeScrolled = window.scrollY > 20;
+
+        if (shouldBeScrolled !== headerIsScrolled) {
+            header.classList.toggle('scrolled', shouldBeScrolled);
+            headerIsScrolled = shouldBeScrolled;
+        }
+
+        scrollTicking = false;
+    };
+
     const handleScroll = () => {
-        if (window.scrollY > 20) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
+        if (!scrollTicking) {
+            scrollTicking = true;
+            window.requestAnimationFrame(updateHeaderState);
         }
     };
     
     window.addEventListener('scroll', handleScroll, { passive: true });
     // Check on load
-    handleScroll();
+    updateHeaderState();
 
     // --- 2. Mobile Menu Toggle ---
     const toggleMenu = () => {
@@ -61,19 +74,28 @@ document.addEventListener('DOMContentLoaded', () => {
         rootMargin: "0px 0px -50px 0px"
     };
 
-    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
-        entries.forEach(entry => {
-            if (!entry.isIntersecting) {
-                return;
-            } else {
-                entry.target.classList.add('visible');
-                appearOnScroll.unobserve(entry.target);
-            }
-        });
-    }, appearOptions);
-
     fadeSections.forEach(item => {
         item.classList.add('fade-in');
-        appearOnScroll.observe(item);
     });
+
+    if ('IntersectionObserver' in window) {
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                }
+
+                entry.target.classList.add('visible');
+                appearOnScroll.unobserve(entry.target);
+            });
+        }, appearOptions);
+
+        fadeSections.forEach(item => {
+            appearOnScroll.observe(item);
+        });
+    } else {
+        fadeSections.forEach(item => {
+            item.classList.add('visible');
+        });
+    }
 });
