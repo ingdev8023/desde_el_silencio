@@ -338,7 +338,7 @@ p {
 }
 
 .header__brand span {
-    color: var(--color-primary);
+    color: #709274;
 }
 
 .header__nav {
@@ -1095,7 +1095,7 @@ p {
 
 .footer__copyright {
     font-size: var(--text-xs);
-    color: var(--color-text-muted);
+    color: #b8ada3;
     margin-bottom: 0;
 }
 
